@@ -1,5 +1,8 @@
 # Frequency to Note Conversion / Harmonic Overtone Generation
 
+
+
+
 ### To Run:
 Copy and paste the following into your command line of choice:
 ```
@@ -14,4 +17,6 @@ Note: `git` and `python3` are required.
 
 ### CLI Usage Example:
 
-![CLI Functionality](/imgs/demo.png)
+![CLI Functionality 1](/imgs/demo1.png)
+![CLI Functionality 2](/imgs/demo2.png)
+

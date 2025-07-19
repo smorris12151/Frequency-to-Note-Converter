@@ -17,7 +17,7 @@ while(looper == "y"):
     myNote = Note(inputFreq, noteFactory)
     print("\nThe note at " + str(inputFreq) + "Hz is:")
     print(myNote)
-    numOvertones = int(input("\nHow many overtones would you like?\n"))
+    numOvertones = int(input("How many harmonics in your harmonic series?\n"))
     overTones = myNote.calculateOverTones(numOvertones)
     for i in range(numOvertones):
                 if i == 0:
