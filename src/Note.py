@@ -15,7 +15,7 @@ class Note:
     def getNoteFactory(self):
         return self.noteFactory    
     def __str__(self):
-        return f"{self.name}{self.octave} {self.semitone} Semitones and {self.cent} Cents"
+        return f"Note Name: {self.name}{self.octave}\nSemitones: {self.semitone}\nCents: {self.cent} "
         
     def calculateOverTones(self, numOverTones, verbosity = 0):
         
