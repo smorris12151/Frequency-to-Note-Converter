@@ -1,3 +1,3 @@
-C++ rebuild of CS5001 Python Final 
+# Frequency to Note Conversion / Harmonic Overtone Generation
 
 
