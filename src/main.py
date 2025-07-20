@@ -12,6 +12,7 @@ anchorA = float(input("Welcome, please input a value for your anchor frequency (
 
 noteFactory = NoteFactory(anchorA)
 looper = "y"
+
 while(looper == "y"):
     inputFreq = float(input("Please input a frequency to analyse: \n"))
     myNote = Note(inputFreq, noteFactory)
