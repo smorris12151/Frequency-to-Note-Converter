@@ -28,11 +28,11 @@ The goal of this project is to provide a succinct way of accurately mapping some
 
 |Units|Description|Example|
 | --- | --- | ---|
-|Semitones| The difference from one note to its immediate neighbor| A to A# is one semitone; A to B is two semitones, and so on.|
-|Chromatic Scale| A series of 12 notes, each one semitone apart from its neighbor, ending with a higher register of its starting note. | [A, A#, B, C, C#, D, D#, E, F, F#, G, G#] -> the next note in this series would be A, one octave up from the starting point.|
-|Octave| A difference of 12 semitones, from a given note to the same note in a higher register, notated as A3, A4, etc | A2 + 12 semitones = A3|
-|Cents| A smaller unit of measurement to define changes in notes; there are 100 cents to a semitone.| A3 + 54 cents is different than A3 + 55 cents (though most wouldn't hear any difference.)|
-|Musical Note| An entirely arbitrary distinction between different audio frequencies, whos' naming conventions vary from culture to culture and style to style. | A# == Bb; In some German music, B natural is labeled as H!|
+|Semitones| The difference from one note to its immediate neighbor| $A$ to $A$# is one semitone; $A$ to $B$ is two semitones, and so on.|
+|Chromatic Scale| A series of 12 notes, each one semitone apart from its neighbor, ending with a higher register of its starting note. | [$A$, $A$#, $B$, $C$, $C$#, $D$, $D$#, $E$, $F$, $F$#, $G$, $G$#] -> the next note in this series would be A, one octave up from the starting point.|
+|Octave| A difference of 12 semitones, from a given note to the same note in a higher register, notated as $A_3$, $A_4$, etc | $A_2$ + 12 semitones = $A_3$|
+|Cents| A smaller unit of measurement to define changes in notes; there are 100 cents to a semitone.| $A_3$ + 54 cents is different than $A_3$ + 55 cents (though most wouldn't hear any difference.)|
+|Musical Note| An entirely arbitrary distinction between different audio frequencies, whos' naming conventions vary from culture to culture and style to style. | $A$# is equivalent to $B$ flat; Similarly, in some German music, $B$ natural is labeled as $H$! Ergo, names do not necessarily make the note.|
 
 ### Notes as Frequencies
 
@@ -51,7 +51,7 @@ Our variables are defined as follows:
 
 In our above equation, the value $f_0$, and therefore, the exact frequency of all notes in that defined tuning, is more or less arbitrary; different cultures and styles of music choose different values for $f_0$, varying sometimes even from composer to composer! 
 
-In general though, our default Western Standard is **A440**, indicating that the note $A_4$ is tuned to **440 Hz**.
+In general though, our default Western Standard is $A440$, indicating that the note $A_4$ is tuned to **440 Hz**.
 
 ### Calculating our Frequencies / Populating our Notes
 
@@ -59,20 +59,20 @@ With $f_0$ defined we can calculate an entire piano's worth of frequency values 
 
 In fact, as mentioned previously, if we extend $n$'s precision to two decimal places we can increase the precision of our frequency calculation 100 fold.
 
-If we consider the lowest note on a standard 88 key piano, $A_0$, when we tune our piano to A440, this note has a frequency of **27.50 Hz**. By tradition, we start counting our octaves at C instead of A; as such, we can define the following dictionary of "base frequencies" by working off of $A_0$:
+If we consider the lowest note on a standard 88 key piano, $A_0$, when we tune our piano to $A440$, this note has a frequency of **27.50 Hz**. By tradition, we start counting our octaves at $C$ instead of $A$; as such, we can define the following dictionary of "base frequencies" by working off of $A_0$:
 | Note | Frequency|
 |---|---|
 |$C_0$|16.35 Hz|
-|$C\#_0$|17.32 Hz|
+|$C$#$_0$|17.32 Hz|
 |$D_0$|18.35 Hz|
-|$D\#_0$|19.45 Hz|
+|$D$#$_0$|19.45 Hz|
 |$E_0$|20.60 Hz|
 |$F_0$|21.83 Hz|
-|$F\#_0$|23.12 Hz|
+|$F$#$_0$|23.12 Hz|
 |$G_0$|24.50 Hz|
-|$G\#_0$|25.96 Hz|
+|$G$#$_0$|25.96 Hz|
 |$A_0$|27.50 Hz|
-|$A\#_0$|29.14 Hz|
+|$A$#$_0$|29.14 Hz|
 |$B_0$|30.87 Hz|
 
 Note that this is not reflective of an actual piano keyboard - as mentioned, the lowest note on a standard piano is $A_0$; similarly, the range of human hearing generally peters out at about 20 Hz. This table of base frequencies is purely for the sake of programmatically building out note objects.
