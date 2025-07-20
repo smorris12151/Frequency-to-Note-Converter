@@ -63,16 +63,16 @@ If we consider the lowest note on a standard 88 key piano, $A_0$, when we tune o
 | Note | Frequency|
 |---|---|
 |$C_0$|16.35 Hz|
-|$C$#$_0$|17.32 Hz|
+|$C$#<sub>0</sub>|17.32 Hz|
 |$D_0$|18.35 Hz|
-|$D$#$_0$|19.45 Hz|
+|$D$#<sub>0</sub>|19.45 Hz|
 |$E_0$|20.60 Hz|
 |$F_0$|21.83 Hz|
-|$F$#$_0$|23.12 Hz|
+|$F$#<sub>0</sub>|23.12 Hz|
 |$G_0$|24.50 Hz|
-|$G$#$_0$|25.96 Hz|
+|$G$#<sub>0</sub>|25.96 Hz|
 |$A_0$|27.50 Hz|
-|$A$#$_0$|29.14 Hz|
+|$A$#<sub>0</sub>|29.14 Hz|
 |$B_0$|30.87 Hz|
 
 Note that this is not reflective of an actual piano keyboard - as mentioned, the lowest note on a standard piano is $A_0$; similarly, the range of human hearing generally peters out at about 20 Hz. This table of base frequencies is purely for the sake of programmatically building out note objects.
